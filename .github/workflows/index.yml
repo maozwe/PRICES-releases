@@ -1,0 +1,55 @@
+name: Rebuild index and price data
+
+# מי שמעלה מחירון דרך ממשק הווב של GitHub הוא הדרך הרגילה שבה הריפו הזה
+# מקבל תוכן, ולכן גם עץ הקבצים וגם ה-JSON שהאפליקציה מחפשת בו חייבים
+# להיבנות מעצמם ולא להסתמך על מישהו שיריץ סקריפט.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'files/**'
+      - 'tools/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# העלאה של כמה קבצים דרך ממשק הווב היא push לכל קובץ. בלי זה הם מתחרים
+# זה בזה וכולם חוץ מאחד נכשלים בדחיפה.
+concurrency:
+  group: rebuild-index
+  cancel-in-progress: false
+
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - run: pip install -r tools/requirements.txt
+
+      - name: Build index.json
+        run: python tools/build_index.py
+
+      - name: Parse price lists into data/
+        run: python tools/build_data.py
+
+      - name: Commit if anything actually changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # מוסיפים לפני ההשוואה: git diff אינו רואה קובץ לא במעקב, ולכן
+          # index.json ראשון היה מדווח "ללא שינוי", מדלג על הקומיט ועובר
+          # בירוק בלי שנכתב דבר.
+          git add index.json data
+          if git diff --cached --quiet; then
+            echo "nothing changed"
+            exit 0
+          fi
+          git commit -m "Rebuild index and price data"
+          git push

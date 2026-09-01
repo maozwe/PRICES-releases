@@ -1,0 +1,47 @@
+{
+  "root": "files",
+  "tree": {
+    "name": "files",
+    "path": "files",
+    "type": "dir",
+    "children": [
+      {
+        "name": "מחירונים",
+        "path": "files/מחירונים",
+        "type": "dir",
+        "children": [
+          {
+            "name": "dekel_pricelist 2026.06.xlsx",
+            "path": "files/מחירונים/dekel_pricelist 2026.06.xlsx",
+            "type": "file",
+            "size": 2529669,
+            "url": "https://raw.githubusercontent.com/maozwe/PRICES-releases/main/files/%D7%9E%D7%97%D7%99%D7%A8%D7%95%D7%A0%D7%99%D7%9D/dekel_pricelist%202026.06.xlsx"
+          },
+          {
+            "name": "documents_tichnun_ironi_infrastructure_and_paving_price_list.pdf",
+            "path": "files/מחירונים/documents_tichnun_ironi_infrastructure_and_paving_price_list.pdf",
+            "type": "file",
+            "size": 4831989,
+            "url": "https://raw.githubusercontent.com/maozwe/PRICES-releases/main/files/%D7%9E%D7%97%D7%99%D7%A8%D7%95%D7%A0%D7%99%D7%9D/documents_tichnun_ironi_infrastructure_and_paving_price_list.pdf"
+          },
+          {
+            "name": "המחירון-האחוד-יולי-2026.xls",
+            "path": "files/מחירונים/המחירון-האחוד-יולי-2026.xls",
+            "type": "file",
+            "size": 3456512,
+            "url": "https://raw.githubusercontent.com/maozwe/PRICES-releases/main/files/%D7%9E%D7%97%D7%99%D7%A8%D7%95%D7%A0%D7%99%D7%9D/%D7%94%D7%9E%D7%97%D7%99%D7%A8%D7%95%D7%9F-%D7%94%D7%90%D7%97%D7%95%D7%93-%D7%99%D7%95%D7%9C%D7%99-2026.xls"
+          },
+          {
+            "name": "מחירון-לעבודות-עירוניות-ומסופים-ושבילי-אופניים-082025.xlsx",
+            "path": "files/מחירונים/מחירון-לעבודות-עירוניות-ומסופים-ושבילי-אופניים-082025.xlsx",
+            "type": "file",
+            "size": 2577228,
+            "url": "https://raw.githubusercontent.com/maozwe/PRICES-releases/main/files/%D7%9E%D7%97%D7%99%D7%A8%D7%95%D7%A0%D7%99%D7%9D/%D7%9E%D7%97%D7%99%D7%A8%D7%95%D7%9F-%D7%9C%D7%A2%D7%91%D7%95%D7%93%D7%95%D7%AA-%D7%A2%D7%99%D7%A8%D7%95%D7%A0%D7%99%D7%95%D7%AA-%D7%95%D7%9E%D7%A1%D7%95%D7%A4%D7%99%D7%9D-%D7%95%D7%A9%D7%91%D7%99%D7%9C%D7%99-%D7%90%D7%95%D7%A4%D7%A0%D7%99%D7%99%D7%9D-082025.xlsx"
+          }
+        ],
+        "count": 4
+      }
+    ],
+    "count": 1
+  }
+}

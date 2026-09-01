@@ -1,0 +1,37 @@
+{
+  "sources": [
+    {
+      "id": "dekel",
+      "name": "מחירון דקל",
+      "version": "06/2026",
+      "file": "files/מחירונים/dekel_pricelist 2026.06.xlsx",
+      "count": 40759,
+      "priced": 38170
+    },
+    {
+      "id": "shikun",
+      "name": "משרד הבינוי והשיכון — פיתוח וסלילה",
+      "version": "12/2025",
+      "file": "files/מחירונים/documents_tichnun_ironi_infrastructure_and_paving_price_list.pdf",
+      "count": 2997,
+      "priced": 2683
+    },
+    {
+      "id": "netivei",
+      "name": "המחירון האחוד — נתיבי ישראל",
+      "version": "07/2026",
+      "file": "files/מחירונים/המחירון-האחוד-יולי-2026.xls",
+      "count": 10250,
+      "priced": 7551
+    },
+    {
+      "id": "ironi",
+      "name": "מחירון עירוני, מסופים ושבילי אופניים",
+      "version": "08/2025",
+      "file": "files/מחירונים/מחירון-לעבודות-עירוניות-ומסופים-ושבילי-אופניים-082025.xlsx",
+      "count": 9082,
+      "priced": 6841
+    }
+  ],
+  "failed": []
+}
